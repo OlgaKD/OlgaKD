@@ -7,12 +7,12 @@ public class JavaBasics {
     public void javaBasic() {
 
         int a = 30000;//Total amount Taken
-        int b = 10000;//Amount to be payed in first 10 years
-        int c = 1000; //10% of the first payed Amount
+        int b = a/3;//Amount to be payed in first 10 years
+        int c = b/100*10; //10% of the first payed Amount
         int d = a - b;//Amount to be payed in second 10 years
-        int e = 1600;//8% of the first payed Amount
-        int f = d - b; //Amount to be payed in last 10 years
-        int g= 600; //6% of the first payed Amount
+        int e = d/100*8;//8% of the first payed Amount
+        int f = a - d; //Amount to be payed in last 10 years
+        int g= f/100*6; //6% of the first payed Amount
 
         int h= (int) sumDigits(a, c, e, g);
         System.out.println("% in first 10 years:"+c);
